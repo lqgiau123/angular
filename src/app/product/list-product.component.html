@@ -1,0 +1,26 @@
+
+<!-- form data -->
+<div class="table">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Tên kỹ năng</th>
+                <th>Mô tả</th>
+                <th>Trạng thái</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let item of datas; let i = index">
+                <tr>
+                   <a routerLink="/product/{{item.id}}"> <td>{{i}}</td></a>
+                    <td>{{item.name}}</td>
+                    <td>{{item.note}}</td>
+					<td>{{item.status}}</td>
+					<td>aa</td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>
